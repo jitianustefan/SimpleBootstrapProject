@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 2</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body style="background-color: #ff471a;" >
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+        
+        <h3>Game</h3>
+        <h2>JACKPOT</h2>
+    <div class="bg-white">
+        <div class="fs-2 pt-5">Enter a 4 digit number: </div>
+        <br>
+        <form>
+            <input id="numar" type="number">
+            <br>
+            
+            <button onclick="check()" class="my-5 py-2" style="background-color: #ff471a; color: white;">Submit</button>
+        </form>
+    </div>
+    </div>
+</div>
+</div>
+    <script>
+        function check () {
+            const nr = document.querySelector('#numar').value;
+            const lung = nr.length;
+            //alert(`${nr}`);
+            if(lung > 4){
+                alert('Ai tastat un numar format din mai mult de 4 cifre! ');
+                return false;
+            }else if (lung < 4)
+            {
+                alert("Ai tastat un numar format din mai putin de 4 cifre! ");
+                return false;
+            }
+            switch(nr){
+                case '1234':
+                    alert('Felicitari ai castigat 5000 lei !');
+                    
+                    break;
+                case '1111':
+                    alert('Felicitari ai castigat 5000 lei !');
+                    break;
+                case '1000':
+                    alert('Felicitari ai castigat 5000 lei !');
+                    break;
+                case '0000':
+                    alert('Felicitari ai castigat 5000 lei !');
+                    break;
+                default:
+                    alert('Mai incearca !');
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

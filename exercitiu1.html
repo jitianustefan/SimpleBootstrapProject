@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Am inclus bootstrap -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <title>Exercitiul 1</title>
+</head>
+<body>
+    <div class="d-flex justify-content-around my-5">
+        <button type="button" onclick="red()" class="btn btn-outline-red">RED</button> 
+        <button type="button" onclick="green()" class="btn btn-outline-green">GREEN</button> 
+        <button type="button" onclick="blue()" class="btn btn-outline-blue">BLUE</button>
+    </div>
+    <script>
+        function red ()
+        {
+            document.querySelector('body').style.backgroundColor = "red";
+        }
+        function green ()
+        {
+            document.querySelector('body').style.backgroundColor = "green";
+        }
+        function blue ()
+        {
+            document.querySelector('body').style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>

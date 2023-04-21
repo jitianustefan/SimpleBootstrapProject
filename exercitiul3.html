@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 3</title>
+    <!-- Am inclus bootstrap -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-dark text-almeu">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2>Insurance Details</h2>
+                <form class="mt-2 form-control text-almeu">
+                    <label for="fname">First name:</label>
+                    <input class="mt-2 input-almeu" type="text" id="fname" name="fname" size="50"><br>
+                    <label for="lname">Last name:</label>
+                    <input class="mt-2 input-almeu"type="text" id="lname" name="lname" size="50"><br>
+                    <label for="birthday">Date of Birth(DD/MM/YYYY):</label>
+                    <input type="date" class="mt-2 input-almeu text-white"id="birthday" name="birthday"><br>
+                    <label for="age">Age: </label>
+                    <input class="mt-2 input-almeu" type="number"id="age" name="age" size="50"><br>
+                    <div class="mt-2">Gender: 
+                    <input type="radio" id="male" name="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Female</label>  
+                    <input type="radio" id="other" name="other" value="other">
+                    <label for="other">Other</label><br>
+                    </div>
+
+                    <label for="e-mail">Email ID: </label>
+                    <input class="mt-2 input-almeu" type="email" id="e-mail" name="e-mail" size="50"><br>
+                    <label for="mobnr">Mobile Number</label>
+                    <input class="mt-2 input-almeu" type="number" id="mobnr" name="mobnr" size="50"><br>
+                    <label for="address">Address:</label>
+                    <textarea class="mt-2 input-almeu" name="address" id="address" cols="50" rows="5"></textarea><br>
+                    <label for="pin">Pincode: </label>
+                    <input class="mt-2 input-almeu" type="password" id="pin" name="pin" size="50"><br>
+
+                    <div class="mt-2">
+                    Do you have any Health Problems? 
+                    <input type="radio" id="yes" name="yes" value="yes">
+                    <label for="yes">Yes</label>  
+                    <input type="radio" id="no" name="no" value="no">
+                    <label for="no">No</label><br>
+                    </div>
+                
+                    <label for="detalii">List health problems if any: </label>
+                    <textarea class="mt-2 input-almeu" name="detalii" id="detalii" cols="50" rows="5"></textarea>
+
+                    <br>
+                    <input type="submit" class="mt-2 input-almeu text-white" value="Validate">
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
